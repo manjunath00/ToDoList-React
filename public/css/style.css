@@ -1,0 +1,149 @@
+.header--container {
+  height: 100px;
+  width: 220px;
+  font-size: 72px;
+  color: blue;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  /* height: 750px; */
+  height: 750px;
+  /* width: 550px; */
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Helvetica";
+  /* outline: 1px solid #000; */
+  background: #ebecf0;
+}
+
+.submit--container {
+  padding: 0 4.5rem;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.todos--container {
+  overflow-y: auto;
+  height: 450px;
+}
+
+.input__text-field {
+  border: 1px solid #354463;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 28px;
+  font-style: italic;
+}
+
+input:focus {
+  outline: none;
+}
+* {
+  /* outline: 1px solid #000; */
+}
+.todo {
+  display: grid;
+  grid-template-columns: 0.25fr 2fr 0.25fr;
+  margin: 1rem 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+}
+
+.todo-text,
+.todo-action,
+.todo-status {
+  padding: 0.5rem;
+}
+
+.todo-text {
+  font-size: 24px;
+}
+
+.todo-action {
+  visibility: hidden;
+}
+
+.todo:hover .todo-action {
+  visibility: visible;
+}
+
+.todo:hover {
+  font-size: 2rem;
+}
+.todo:hover { 
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.todo-action button {
+  background-size: cover;
+  border: none;
+  font-size: 2rem;
+  color: red;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+
+.checkbox {
+  border: 1px solid green;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+
+  padding: 0;
+  margin: 0;
+  background: none;
+  appearance: none;
+}
+
+.checkbox:active {
+  background-color: #000;
+}
+
+.checkbox:visited {
+  background-color: green;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: none;
+}
+
+.dragging { 
+  opacity: 0.25; 
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #354463;
+}
+::-webkit-scrollbar-thumb {
+  background: #354835;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
